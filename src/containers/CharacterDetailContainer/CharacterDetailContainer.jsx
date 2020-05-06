@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import CharacterDetail from '../../components/CharacterDetail/CharacterDetail';
+import CharacterDetail from '../../components/App/CharacterDetail/CharacterDetail';
 import { fetchCharacter } from '../../services/fetch';
 
 const CharacterDetailContainer = ({ match }) => {
