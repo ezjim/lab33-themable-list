@@ -6,15 +6,19 @@ import {
 } from 'react-router-dom';
 import CharactersPage from '../../containers/CharacterPage/CharacterPage';
 import CharacterDetailContainer from '../../containers/CharacterDetailContainer/CharacterDetailContainer';
+import Header from '../App/Header/Header';
 
 
 export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={CharactersPage} />
-        <Route exact path="/:id" component={CharacterDetailContainer} />
-      </Switch>
-    </Router>
+    <div>
+      <Header />
+      <Router>
+        <Switch>
+          <Route exact path="/" component={CharactersPage} />
+          <Route exact path="/:id" component={CharacterDetailContainer} />
+        </Switch>
+      </Router>
+    </div>
   );
 }

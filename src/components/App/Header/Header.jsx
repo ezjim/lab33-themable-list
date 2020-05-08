@@ -1,6 +1,6 @@
 import React from 'react';
 import Toggle from '../Toggle/Toggle';
-import { useToggle, useToggleSwitch } from '../../../../hooks/CharacterProvider';
+import { useToggle, useToggleSwitch } from '../../../hooks/CharacterProvider';
 
 const Header = () => {
   const toggle = useToggle();

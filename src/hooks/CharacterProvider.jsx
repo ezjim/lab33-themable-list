@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ToggleSwitch = createContext();
 
-export const ToggleSwitchkProvider = ({ children }) => {
+export const ToggleSwitchProvider = ({ children }) => {
   const [toggleOn, setToggleOn] = useState('lights on');
 
   const toggle = ({ target }) => {
@@ -19,7 +19,7 @@ export const ToggleSwitchkProvider = ({ children }) => {
   );
 };
 //specify that anything renderable 
-ToggleSwitchkProvider.propTypes = {
+ToggleSwitchProvider.propTypes = {
   children: PropTypes.node
 };
 //useContext hook allows passing data to children elements without using redux
@@ -29,7 +29,7 @@ export const useToggle = () => {
   return toggle;
 };
 
-export const useToggleOn = () => {
+export const useToggleSwitch = () => {
   const { toggleOn } = useContext(ToggleSwitch);
   return toggleOn;
 };
